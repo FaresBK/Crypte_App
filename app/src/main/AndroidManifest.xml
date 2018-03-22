@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tm161.crypte_app">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name=".Beginning"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.fbk_pc.crypte_app.Inscription"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.fbk_pc.crypte_app.Login"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.example.fbk_pc.crypte_app.Shema"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.example.fbk_pc.crypte_app.Shema2"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.example.fbk_pc.crypte_app.COffphoto" />
+        <activity android:name="com.example.fbk_pc.crypte_app.Coffmusique" />
+        <activity android:name="com.example.fbk_pc.crypte_app.Coffvideo" />
+        <activity android:name="com.example.fbk_pc.crypte_app.Coffplus" />
+
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <receiver android:name="com.example.fbk_pc.crypte_app.ReciveMessage">
+            <intent-filter>
+                <action android:name="android.provider.telephony.SmS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name="com.example.fbk_pc.crypte_app.SandSms" />
+        <activity android:name="com.example.fbk_pc.crypte_app.Crypter"
+            android:theme="@style/AppTheme"
+            />
+        <activity
+            android:name="com.example.fbk_pc.crypte_app.Shema3"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.example.fbk_pc.crypte_app.Reception_Sms">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_inscription"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tm161.crypte_app.com.example.fbk_pc.crypte_app.Inscription"
+    android:background="@drawable/ieautifu"
+    android:weightSum="1">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="Inscription"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textStyle="normal|bold|italic"
+        android:layout_marginTop="200dp"
+        />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColorHint="@android:color/holo_blue_bright"
+
+        >
+
+    <EditText
+      android:layout_width="match_parent"
+        android:layout_height="40dp"
+      android:hint="User name"
+      android:inputType="text"
+      android:id="@+id/user"
+        android:textColor="@android:color/holo_blue_bright"
+
+        />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/holo_blue_bright"
+        >
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:hint="Password"
+    android:inputType="textPassword"
+    android:id="@+id/pass"
+    android:textColor="@android:color/holo_blue_bright"
+    />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+        android:textColorHint="@android:color/holo_blue_bright"
+            >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Conf-Password"
+        android:inputType="textPassword"
+        android:id="@+id/Conf"
+        android:textColor="@android:color/holo_blue_bright"
+
+        />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColorHint="@android:color/holo_blue_bright"
+            >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="E-mail"
+         android:inputType="textEmailAddress"
+        android:id="@+id/email"
+        android:textColor="@android:color/holo_blue_bright"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="50dp"
+     android:layout_marginTop="20dp"
+     >
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:text="Annuler"
+        android:id="@+id/bt1"
+        android:layout_marginLeft="40dp"
+
+
+        android:background="@android:color/holo_blue_bright" />
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:text="Suivant"
+            android:id="@+id/bt2"
+            android:layout_marginLeft="10dp"
+
+            android:background="@android:color/holo_blue_bright" />
+ </LinearLayout>
+</LinearLayout>
